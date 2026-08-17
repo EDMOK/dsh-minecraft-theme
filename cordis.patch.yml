@@ -1,0 +1,6 @@
+# Minecraft Pixel skin bundle patch: inserts its public dsh.client entry into the web plugin roster.
+# Install with: dsh plugin --profile web add <this-folder-or-git-url>
+- insert:
+    - id: ui-minecraft-pixel
+      name: '@deepseek-ai/dsh-client-ui-minecraft-pixel'
+

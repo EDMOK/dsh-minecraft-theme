@@ -1,0 +1,17 @@
+{
+  "id": "minecraft-pixel",
+  "name": "Minecraft 像素启动器",
+  "nameEn": "Minecraft Pixel Launcher",
+  "author": "DeepSeek Harness custom skin",
+  "tagline": "Minecraft Launcher 风格的像素方块 WebUI 皮肤",
+  "description": "一套面向 DeepSeek Harness WebUI 的 Minecraft Launcher 风格皮肤。它注册 minecraft 主题，注入像素方块装饰，并使用草方块、木板、石材、深板岩等视觉语言覆盖侧边栏、对话区、按钮、输入框和设置界面。",
+  "tags": ["minecraft", "pixel", "launcher", "block", "game", "skin"],
+  "accent": "#72cc40",
+  "bodyAttr": null,
+  "package": "@deepseek-ai/dsh-client-ui-minecraft-pixel",
+  "wiring": {
+    "id": "ui-minecraft-pixel",
+    "bundleWired": false
+  },
+  "order": 10
+}

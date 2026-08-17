@@ -1,0 +1,52 @@
+{
+  "name": "@deepseek-ai/dsh-client-ui-minecraft-pixel",
+  "description": "Hot-pluggable Minecraft Launcher pixel skin for the DeepSeek Harness Web GUI",
+  "version": "0.1.0-rc.5",
+  "private": true,
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./skin.json": "./skin.json",
+    "./styles/*": "./lib/styles/*",
+    "./package.json": "./package.json"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "inject": [
+        "@deepseek-ai/dsh-client-runtime",
+        "@deepseek-ai/dsh-client-ui-theme",
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ],
+      "platform": "web"
+    }
+  },
+  "scripts": {
+    "build": "tsdown",
+    "test": "vitest run"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "^4.0.1",
+    "tsdown": "0.22.14",
+    "typescript": ">=5",
+    "vitest": "^4.1.8",
+    "react": "^18.2.0"
+  },
+  "files": [
+    "lib",
+    "src",
+    "cordis.patch.yml",
+    "skin.json",
+    "LICENSE",
+    "README.md"
+  ]
+}
